@@ -14,7 +14,7 @@ public class BananaRender extends MobEntityRenderer<BananaEntity, BananaEntityMo
     @Override
     protected Identifier getTexture(BananaEntity bananamodel)
     {
-        return new Identifier("tutorial:textures/entity/banana/bananamob.png");
+        return new Identifier("tutorial", "textures/entity/banana/bananamob.png");
     }
     
 

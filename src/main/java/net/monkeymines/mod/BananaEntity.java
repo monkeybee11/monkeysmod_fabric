@@ -37,7 +37,7 @@ public class BananaEntity extends HostileEntity {
     @Override
     protected Identifier getLootTableId()
     {
-        return new Identifier("tutorial:bananamob.json");
+        return new Identifier("tutorial", "loot_table/bananamob.json");
     }
 
 
