@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "W W",
+        "B B",
+        " BL"
+    ],
+    "Key": {
+        "W": {
+            "tag": "minecraft:wool"
+        },
+        "B": {
+            "item": "minecraft:bamboo"
+        },
+        "L": {
+            "item": "minecraft:lever"
+        }
+    },
+    "result": {
+        "item": "tutorial:banana_picker",
+        "count": 1
+    }
+}

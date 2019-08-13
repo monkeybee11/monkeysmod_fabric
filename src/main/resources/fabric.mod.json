@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "mm",
+  "version": "${version}",
+
+  "name": "monkeys mod",
+  "description": "its monkeys mod BLEH",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.monkeymines.mod.MyMod"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "suggests": {
+  }
+}
