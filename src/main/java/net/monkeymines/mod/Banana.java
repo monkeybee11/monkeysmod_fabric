@@ -6,6 +6,7 @@ import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import net.monkeymines.mod.MyMod;
 
 public class Banana extends Item
 {

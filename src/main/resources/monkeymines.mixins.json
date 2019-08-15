@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.monkeymines.mod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "JungleBiomeMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "mm",
+  "id": "monkeysmod",
   "version": "${version}",
 
   "name": "monkeys mod",
   "description": "its monkeys mod BLEH",
   "authors": [
-    "Me!"
+    "monkeybee11 and my dad"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -20,9 +20,13 @@
   "entrypoints": {
     "main": [
       "net.monkeymines.mod.MyMod"
+    ],
+    "client": [
+      "net.monkeymines.mod.BananaClientInit"
     ]
   },
   "mixins": [
+    "monkeymines.mixins.json"
   ],
 
   "depends": {

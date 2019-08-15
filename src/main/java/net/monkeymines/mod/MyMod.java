@@ -36,14 +36,14 @@ public class MyMod implements ModInitializer
        @Override
        public void onInitialize() {
 
-        Registry.register(Registry.ITEM, new Identifier("tutorial", "banana_item"), BANANA_ITEM);
-        Registry.register(Registry.ITEM, new Identifier("tutorial", "banana_picker"), BANANA_PICKER);
-        Registry.register(Registry.BLOCK, new Identifier("tutorial", "banana_bunch"), BANANA_BUNCH);
-        Registry.register(Registry.ITEM, new Identifier("tutorial", "banana_bunch"), new BlockItem(BANANA_BUNCH, new Item.Settings().group(ItemGroup.MISC)));
-        Registry.register(Registry.ITEM, new Identifier("tutorial", "banana"), BANANA);
-        Registry.register(Registry.ITEM, new Identifier("tutorial", "banana_peel"), BANANA_PEEL); 
-        Registry.register(Registry.BLOCK, new Identifier("tutorial", "voodoo_bench"), VOODOO_BENCH);
-        Registry.register(Registry.ITEM, new Identifier("tutorial", "voodoo_bench"), new BlockItem(VOODOO_BENCH, new Item.Settings().group(ItemGroup.MISC)));
-        Registry.register(Registry.ENTITY_TYPE, new Identifier("tutorial", "banana_mob"),BANANA_MOB);
+        Registry.register(Registry.ITEM, new Identifier("monkeysmod", "banana_item"), BANANA_ITEM);
+        Registry.register(Registry.ITEM, new Identifier("monkeysmod", "banana_picker"), BANANA_PICKER);
+        Registry.register(Registry.BLOCK, new Identifier("monkeysmod", "banana_bunch"), BANANA_BUNCH);
+        Registry.register(Registry.ITEM, new Identifier("monkeysmod", "banana_bunch"), new BlockItem(BANANA_BUNCH, new Item.Settings().group(ItemGroup.MISC)));
+        Registry.register(Registry.ITEM, new Identifier("monkeysmod", "banana"), BANANA);
+        Registry.register(Registry.ITEM, new Identifier("monkeysmod", "banana_peel"), BANANA_PEEL); 
+        Registry.register(Registry.BLOCK, new Identifier("monkeysmod", "voodoo_bench"), VOODOO_BENCH);
+        Registry.register(Registry.ITEM, new Identifier("monkeysmod", "voodoo_bench"), new BlockItem(VOODOO_BENCH, new Item.Settings().group(ItemGroup.MISC)));
+        Registry.register(Registry.ENTITY_TYPE, new Identifier("monkeysmod", "banana_mob"),BANANA_MOB);
        }
 }

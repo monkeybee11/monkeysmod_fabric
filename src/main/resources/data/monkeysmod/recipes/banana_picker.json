@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "W W",
+        "B B",
+        " BL"
+    ],
+    "key": {
+        "W": {
+            "item": "minecraft:white_wool"
+        },
+        "B": {
+            "item": "minecraft:bamboo"
+        },
+        "L": {
+            "item": "minecraft:lever"
+        }
+    },
+    "result": {
+        "item": "monkeysmod:banana_picker",
+        "count": 1
+    }
+}
