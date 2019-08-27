@@ -4,5 +4,6 @@
     "block.monkeysmod.banana_bunch": "banana stem",
     "item.monkeysmod.banana": "peeled banana",
     "item.monkeysmod.banana_peel": "banana peel",
-    "block.monkeysmod.voodoo_bench": "voodoo bench"
+    "block.monkeysmod.voodoo_bench": "voodoo bench",
+    "entity.monkeysmod.banana_mob": "banana"
 }

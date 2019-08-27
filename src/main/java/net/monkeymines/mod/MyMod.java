@@ -14,6 +14,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+
 public class MyMod implements ModInitializer 
 {
     //an instance for new items :D 
@@ -27,8 +28,8 @@ public class MyMod implements ModInitializer
     //my Entitys
    public static final EntityType<BananaEntity> BANANA_MOB = FabricEntityTypeBuilder.create(EntityCategory.MONSTER, BananaEntity::new).size(EntityDimensions.fixed(1, 2)).build();
 
-
-
+   //villagers using vampirelib
+   
     //a instance of a new block
     public static final Bananabunch BANANA_BUNCH = new Bananabunch(FabricBlockSettings.of(Material.BAMBOO).build());
     public static final Block VOODOO_BENCH = new Block(FabricBlockSettings.of(Material.BAMBOO).build());

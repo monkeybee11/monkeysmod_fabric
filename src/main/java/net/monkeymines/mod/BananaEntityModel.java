@@ -4,6 +4,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.model.Cuboid;
 import net.minecraft.client.render.entity.model.EntityModel;
+import net.monkeymines.mod.Banana;
 
 /**
  * huge thanks to lars for fixing this for me :) check out his mod https://github.com/XeonPowder/FabricRPG

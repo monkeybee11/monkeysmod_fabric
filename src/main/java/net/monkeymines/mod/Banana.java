@@ -21,15 +21,12 @@ public class Banana extends Item
 public ItemStack finishUsing(ItemStack banana, World world, LivingEntity living) {
   super.finishUsing(banana, world, living);
     if (living instanceof PlayerEntity) {
-      banana.decrement(1);
        PlayerEntity Player = (PlayerEntity)living;
        ItemStack banana_peel = new ItemStack(MyMod.BANANA_PEEL);
        Player.inventory.insertStack(banana_peel);
        banana_peel.increment(1);
     }
-
-
-    return banana.isEmpty() ? new ItemStack(MyMod.BANANA_PEEL) : banana;
+    return banana;
  }
 
 
