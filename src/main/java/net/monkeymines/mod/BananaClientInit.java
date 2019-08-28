@@ -13,9 +13,11 @@ public class BananaClientInit implements ClientModInitializer {
 	@Override
     public void onInitializeClient() {
         // Connects entity to renderer.
-        EntityRendererRegistry.INSTANCE.register(BananaEntity.class,
-                (entityrender, context) -> new BananaRender(entityrender));
+        EntityRendererRegistry.INSTANCE.register(BananaEntity.class,(entityrender, context) -> new BananaRender(entityrender));
+        EntityRendererRegistry.INSTANCE.register(PotatoEntity.class,(entityrender, context) -> new PotatoRender(entityrender));
     }
+
+    
     
 
 

@@ -1,7 +1,10 @@
 package net.monkeymines.mod;
 
+import java.util.Random;
+
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.minecraft.class_4538;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderLayer;
 import net.minecraft.block.BlockState;
@@ -21,7 +24,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.ViewableWorld;
 import net.minecraft.world.World;
 import net.monkeymines.mod.MyMod;
 
@@ -43,9 +45,14 @@ public class Bananabunch extends CropBlock{
     }
 
     @Override
-    public boolean canPlaceAt(BlockState blockState_1, ViewableWorld viewableWorld_1, BlockPos blockPos_1) {
+    public boolean canPlaceAt(BlockState blockState_1, class_4538 viewableWorld_1, BlockPos blockPos_1) {
         BlockState block = viewableWorld_1.getBlockState(blockPos_1.offset(Direction.UP));
         return block.getBlock() == Blocks.JUNGLE_LEAVES;
+     }
+
+     @Override
+     public boolean canGrow(World minecraft, Random random, BlockPos pos, BlockState state) {
+         return super.canGrow(minecraft, random, pos, state);
      }
 
     public VoxelShape getOutlineShape(BlockState blockState_1, BlockView blockView_1, BlockPos blockPos_1,
