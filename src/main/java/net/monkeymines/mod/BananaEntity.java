@@ -22,12 +22,13 @@ public class BananaEntity extends HostileEntity {
         super(entityType, world);
     }
 
+
     @Override
     public boolean canSpawn(IWorld iWorld, SpawnType spawnType) {
       BlockPos down = new BlockPos(this).down();
-  
-        return world.getBiome(down).equals(Biomes.JUNGLE) && (spawnType == SpawnType.NATURAL) || world.getBlockState(down).allowsSpawning(world, down, getType());
-
+        if (world.getMaxLightLevel() <= 7)
+        return world.getBiome(down).equals(Biomes.JUNGLE) && (spawnType == SpawnType.NATURAL) && world.getBlockState(down).allowsSpawning(world, down, getType());
+        return dead;
     }
 
     @Override

@@ -3,7 +3,8 @@
   "package": "net.monkeymines.mod.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "JungleBiomeMixin"
+    "JungleBiomeMixin",
+    "SpawnRestrictionMixin"
   ],
   "client": [
   ],
