@@ -26,9 +26,9 @@ public class BananaEntity extends HostileEntity {
     @Override
     public boolean canSpawn(IWorld iWorld, SpawnType spawnType) {
       BlockPos down = new BlockPos(this).down();
-        if (world.getMaxLightLevel() <= 7)
+        if (world.getMaxLightLevel() <= 7) {
         return world.getBiome(down).equals(Biomes.JUNGLE) && (spawnType == SpawnType.NATURAL) && world.getBlockState(down).allowsSpawning(world, down, getType());
-        return dead;
+         } return false;
     }
 
     @Override
