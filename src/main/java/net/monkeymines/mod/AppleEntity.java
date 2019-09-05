@@ -13,9 +13,9 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
-public class PotatoEntity extends HostileEntity {
+public class AppleEntity extends HostileEntity {
 
-    public PotatoEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public AppleEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -50,7 +50,7 @@ public class PotatoEntity extends HostileEntity {
     @Override
     protected Identifier getLootTableId()
     {
-        return new Identifier("monkeysmod" , "bananamob/potatomob");
+        return new Identifier("monkeysmod" , "bananamob/applemob");
     }
 
 

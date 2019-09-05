@@ -28,6 +28,7 @@ public class MyMod implements ModInitializer
     //my Entitys
    public static final EntityType<BananaEntity> BANANA_MOB = FabricEntityTypeBuilder.create(EntityCategory.MONSTER, BananaEntity::new).size(EntityDimensions.fixed(1, 2)).build();
    public static final EntityType<PotatoEntity> POTATO_MOB = FabricEntityTypeBuilder.create(EntityCategory.MONSTER, PotatoEntity::new).size(EntityDimensions.fixed(1,1)).build();
+   public static final EntityType<AppleEntity> APPLE_MOB = FabricEntityTypeBuilder.create(EntityCategory.MONSTER, AppleEntity::new).size(EntityDimensions.fixed(1, 1)).build();
 
 
 
@@ -49,5 +50,6 @@ public class MyMod implements ModInitializer
         Registry.register(Registry.ENTITY_TYPE, new Identifier("monkeysmod", "banana_mob"),BANANA_MOB);
         Registry.register(Registry.ITEM,new Identifier("monkeysmod", "spawn_banana"), new SpawnEggItem(BANANA_MOB, 16700985, 16509870, new Item.Settings().group(ItemGroup.MISC)));
         Registry.register(Registry.ENTITY_TYPE, new Identifier("monkeysmod" , "potato_mob"),POTATO_MOB);   
+        Registry.register(Registry.ENTITY_TYPE, new Identifier("monkeysmod", "apple_mob"),APPLE_MOB);
     }   
 }

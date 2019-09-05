@@ -7,18 +7,17 @@ import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.util.Identifier;
 
 @Environment(EnvType.CLIENT)
-public class PotatoRender extends MobEntityRenderer<PotatoEntity, PotatoEntityModel> {
+public class AppleRender extends MobEntityRenderer<AppleEntity, PotatoEntityModel>{
 
-    public PotatoRender(EntityRenderDispatcher entityrender)
+    public AppleRender(EntityRenderDispatcher entityrender)
     { 
         super(entityrender, new PotatoEntityModel(), 1);
-        
     }
 
     @Override
-    protected Identifier getTexture(PotatoEntity potatomodel)
+    protected Identifier getTexture(AppleEntity applemodel)
     {
-        return new Identifier("minecraft", "textures/item/potato.png");
+        return new Identifier("minecraft", "textures/item/apple.png");
     }
     
 

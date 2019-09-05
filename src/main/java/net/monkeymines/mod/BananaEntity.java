@@ -1,7 +1,7 @@
 package net.monkeymines.mod;
 
+import net.minecraft.class_4538;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnType;
 import net.minecraft.entity.ai.goal.FollowTargetGoal;
 import net.minecraft.entity.ai.goal.LookAtEntityGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
@@ -11,10 +11,7 @@ import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
-import net.minecraft.world.biome.Biomes;
 
 public class BananaEntity extends HostileEntity {
 
@@ -24,11 +21,10 @@ public class BananaEntity extends HostileEntity {
 
 
     @Override
-    public boolean canSpawn(IWorld iWorld, SpawnType spawnType) {
-      BlockPos down = new BlockPos(this).down();
-        if (world.getMaxLightLevel() <= 7) {
-        return world.getBiome(down).equals(Biomes.JUNGLE) && (spawnType == SpawnType.NATURAL) && world.getBlockState(down).allowsSpawning(world, down, getType());
-         } return false;
+    public boolean canSpawn(class_4538 class_4538_1) {
+        if (world.getMaxLightLevel() >= 7){
+        return super.canSpawn(class_4538_1);}
+        return false;
     }
 
     @Override
