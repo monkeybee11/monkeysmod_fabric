@@ -14,7 +14,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
+import net.monkeymines.mod.BananaCake.java;
 
 public class MyMod implements ModInitializer 
 {
@@ -35,6 +35,7 @@ public class MyMod implements ModInitializer
     //a instance of a new block
     public static final Bananabunch BANANA_BUNCH = new Bananabunch(FabricBlockSettings.of(Material.BAMBOO).build());
     public static final Block VOODOO_BENCH = new Block(FabricBlockSettings.of(Material.BAMBOO).build());
+    public static Block BANANA_CAKE = new BananaCake();
 
        @Override
        public void onInitialize() {
@@ -51,5 +52,6 @@ public class MyMod implements ModInitializer
         Registry.register(Registry.ITEM,new Identifier("monkeysmod", "spawn_banana"), new SpawnEggItem(BANANA_MOB, 16700985, 16509870, new Item.Settings().group(ItemGroup.MISC)));
         Registry.register(Registry.ENTITY_TYPE, new Identifier("monkeysmod" , "potato_mob"),POTATO_MOB);   
         Registry.register(Registry.ENTITY_TYPE, new Identifier("monkeysmod", "apple_mob"),APPLE_MOB);
+        Registry.register(Registry.ITEM, new Identifier("monkeysmod", "banana_cake"), new BlockItem(BANANA_CAKE, new Item.Settings().group(ItemGroup.FOOD).maxCount(1)));
     }   
 }
