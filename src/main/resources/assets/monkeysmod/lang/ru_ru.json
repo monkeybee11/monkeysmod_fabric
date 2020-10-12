@@ -1,0 +1,10 @@
+{
+    "item.monkeysmod.banana_item": "Банан",
+    "item.monkeysmod.banana_picker": "Сборщик Бананов",
+    "block.monkeysmod.banana_bunch": "Стебель Банана",
+    "item.monkeysmod.banana": "Очищенный Банан",
+    "item.monkeysmod.banana_peel": "Банановая Кожура",
+    "block.monkeysmod.voodoo_bench": "Скамейка Вуду",
+    "entity.monkeysmod.banana_mob": "Банан",
+    "item.monkeysmod.spawn_banana": "Яйцо Призыва Банана"
+}
