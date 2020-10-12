@@ -54,6 +54,6 @@ public class MyMod implements ModInitializer
         Registry.register(Registry.ENTITY_TYPE, new Identifier("monkeysmod", "apple_mob"),APPLE_MOB);
         Registry.register(Registry.ITEM, new Identifier("monkeysmod", "banana_cake"), new BlockItem(BANANA_CAKE, new Item.Settings().group(ItemGroup.FOOD).maxCount(1)));
         
-        Registry.register(Registry.BLOCK, new Identifier("monkeysmod", "banana_cake"), HONEY_CAKE);
+        Registry.register(Registry.BLOCK, new Identifier("monkeysmod", "banana_cake"), BANANA_CAKE);
     }   
 }
