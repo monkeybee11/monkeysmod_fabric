@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"4": "monkeysmod:block/cake_bottom",
+		"5": "monkeysmod:block/banana_cake_inner",
+		"6": "monkeysmod:block/banana_cake_side",
+		"10": "monkeysmod:block/banana_cake_top"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 1],
+			"to": [15, 8, 15],
+			"faces": {
+				"north": {"uv": [1, 8, 9, 16], "texture": "#6"},
+				"east": {"uv": [1, 8, 15, 16], "texture": "#6"},
+				"south": {"uv": [7, 8, 15, 16], "texture": "#6"},
+				"west": {"uv": [1, 8, 15, 16], "texture": "#5"},
+				"up": {"uv": [7, 1, 15, 15], "texture": "#10"},
+				"down": {"uv": [7, 1, 15, 15], "texture": "#4", "cullface": "down"}
+			}
+		}
+	]
+}
